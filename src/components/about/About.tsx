@@ -2,7 +2,7 @@ import AboutSection from "./aboutSection";
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-[#43145C] py-6 text-white space-y-10">
+    <div className="flex flex-col justify-center items-center h-auto md:h-screen bg-[#43145C] py-6 text-white space-y-10">
         <h1 className="text-3xl text-white">About Us</h1>
         <div className="w-2/3 mx-auto text-lg">
             <p>

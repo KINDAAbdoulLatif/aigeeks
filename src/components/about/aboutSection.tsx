@@ -17,7 +17,7 @@ const abouts = [
         title: "Events"
     },
     {
-        icon: <MdOutlineMail className="w-16 h-16 md:ml-6" /> ,
+        icon: <MdOutlineMail className="w-16 h-16 ml-8" /> ,
         title: "Emails/Newsletters"
     },
 
@@ -25,7 +25,7 @@ const abouts = [
 export default function AboutSection() {
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:space-x-20 h-auto">
+    <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-20 h-auto">
         {abouts.map((about, key)=>(
             <div key={key} className="flex flex-col h-auto">
                 <span> {about.icon} </span>
