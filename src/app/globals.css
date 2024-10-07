@@ -17,6 +17,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sign{
+  background-image: url('/loginbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.placeholder-white::placeholder {
+  color: white;
+}
 
 @layer base {
   :root {

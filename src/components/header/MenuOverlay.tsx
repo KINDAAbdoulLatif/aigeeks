@@ -17,7 +17,7 @@ const MenuOverlay = ({ links }: {links: LinksType}) => {
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
-      <Link href="/">
+      <Link href="/sign">
         <Button variant="destructive">SignUp</Button>
       </Link>
     </ul>
