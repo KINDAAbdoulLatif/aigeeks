@@ -25,7 +25,7 @@ export function Benefit({benefit}: {benefit: BenefitType}) {
     animate: { y: 0, opacity: 1, x: 0 },
   };
   return (
-    <Card className=" w-full md:w-1/3  h-56 box-content overflow-x-hidden ">
+    <Card className=" w-full md:w-1/3 flex flex-col justify-center   box-content overflow-x-hidden md:h-[350px] ">
         <motion.div
             variants={cardVariants}
             initial="initial"
@@ -34,7 +34,7 @@ export function Benefit({benefit}: {benefit: BenefitType}) {
             ref={ref}
         >
       <CardHeader>
-        <CardTitle className="flex items-center justify-center"> {benefit.icon} </CardTitle>
+        <CardTitle className="flex items-center justify-center text-[#4E176B]"> {benefit.icon} </CardTitle>
         <CardDescription className="text-center"> {benefit.title} </CardDescription>
       </CardHeader>
       <CardContent className="flex justify-center items-center">
