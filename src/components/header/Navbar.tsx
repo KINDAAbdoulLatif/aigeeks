@@ -71,7 +71,7 @@ const Navbar = () => {
     <nav 
       ref={headerRef}
       style={{ transform: "translateY(0)", transition: "transform 0.3s ease" }}
-      className="fixed mx-auto border border-[#24182e] top-0 left-0 right-0 z-10 bg-[#24182e] bg-opacity-100">
+      className=" overflow-hidden w-full fixed mx-auto border border-[#24182e] top-0 left-0 right-0 z-10 bg-[#24182e] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}

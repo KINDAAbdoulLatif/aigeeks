@@ -8,7 +8,7 @@ export default function News() {
   return (
     <div className="h-auto md:h-screen bg-gradient-to-r from-[#2C0C3D] via-[#4E176B] to-[#2C0C3D] space-y-6 pb-6 ">
         <h1 className="text-3xl text-white text-center pt-6">Members benefits</h1>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 px-4">
             {benefits.map((benefit, key)=>(
                 <Benefit key={key} benefit={benefit} />
             ))}
