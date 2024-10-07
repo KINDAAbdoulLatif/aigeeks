@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label"
 
 export function CardSign() {
   return (
-    <Card className="w-1/2 text-white">
+    <Card className=" w-full md:w-1/2 text-white">
       <CardHeader>
         <CardTitle>Sign in</CardTitle>
       </CardHeader>

@@ -10,7 +10,7 @@ export default function page() {
                 <Image src="/Logo_white.png" width={128} height={128} alt="logo"/>
             </Link>
         </div>
-        <div className="sign flex justify-center items-center -pt-4 h-auto md:h-screen">
+        <div className="sign flex justify-center items-center md:-pt-4 md:h-screen p-2">
             <CardSign />
         </div>
     </div>
