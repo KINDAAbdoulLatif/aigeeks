@@ -2,9 +2,9 @@ import AboutSection from "./aboutSection";
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-center items-center h-auto md:h-screen bg-[#43145C] py-6 text-white space-y-10">
-        <h1 className="text-3xl text-white">About Us</h1>
-        <div className=" w-full px-2 md:w-2/3 flex flex-col items-center text-lg">
+    <div className="flex flex-col h-auto md:h-screen bg-[#43145C] py-6 text-white space-y-10">
+        <h1 className="text-3xl text-white text-center">About Us</h1>
+        <div className=" w-full px-2    text-lg">
             <p>
                 Welcome to the AI Club at ENSA Tetouan! We are a passionate group of students dedicated 
                 to exploring the cutting-edge field of Artificial Intelligence. Our club brings together 
@@ -15,7 +15,10 @@ export default function About() {
                  collaborate on exciting projects that shape the future of technology!
             </p>
         </div>
+        <div className="flex  justify-center items-center">
         <AboutSection />
+        </div>
+        
     </div>
   )
 }

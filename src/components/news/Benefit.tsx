@@ -25,7 +25,7 @@ export function Benefit({benefit}: {benefit: BenefitType}) {
     animate: { y: 0, opacity: 1, x: 0 },
   };
   return (
-    <Card className=" w-full md:w-1/3 flex flex-col justify-center   box-content overflow-x-hidden md:h-[350px] ">
+    <Card className=" w-full md:w-1/3 flex flex-col justify-center bg-white   box-content overflow-x-hidden md:h-[350px] ">
         <motion.div
             variants={cardVariants}
             initial="initial"
