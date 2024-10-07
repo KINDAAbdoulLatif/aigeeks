@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="flex flex-col justify-center items-center h-auto md:h-screen bg-[#43145C] py-6 text-white space-y-10">
         <h1 className="text-3xl text-white">About Us</h1>
-        <div className="w-2/3 mx-auto text-lg">
+        <div className=" w-full px-2 md:w-2/3 flex flex-col items-center text-lg">
             <p>
                 Welcome to the AI Club at ENSA Tetouan! We are a passionate group of students dedicated 
                 to exploring the cutting-edge field of Artificial Intelligence. Our club brings together 

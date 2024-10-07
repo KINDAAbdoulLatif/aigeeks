@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import NavLink from "./Navlink";
 import MenuOverlay from "./MenuOverlay";
 // import logoWhite from "/logo-white.png"
@@ -8,6 +8,8 @@ import Image from "next/image";
 import { IoMdMenu } from "react-icons/io";
 import { HiMiniXMark } from "react-icons/hi2";
 import { Button } from "../ui/button";
+import { throttle } from "lodash"
+
 
 const navLinks = [
   {
@@ -41,9 +43,35 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const headerRef = useRef<HTMLDivElement | null>(null);
+  const [lastScrollY, setLastScrollY] = useState(400);
+
+  const handleScroll = throttle(() => {
+    const currentScrollY = window.scrollY;
+
+    if (headerRef.current) {
+      if (currentScrollY > lastScrollY) {
+        headerRef.current.style.transform = "translateY(-200px)";
+      } else {
+        headerRef.current.style.transform = "translateY(0)";
+      }
+      setLastScrollY(currentScrollY);
+    }
+  }, 100); // Throttle function to prevent excessive calls
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY, handleScroll]);
 
   return (
-    <nav className="fixed mx-auto border border-[#24182e] top-0 left-0 right-0 z-10 bg-[#24182e] bg-opacity-100">
+    <nav 
+      ref={headerRef}
+      style={{ transform: "translateY(0)", transition: "transform 0.3s ease" }}
+      className="fixed mx-auto border border-[#24182e] top-0 left-0 right-0 z-10 bg-[#24182e] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
