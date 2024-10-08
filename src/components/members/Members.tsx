@@ -16,52 +16,58 @@ export default function Members() {
 const amembers = [
     {
         index: 1,
+        title: "President",
+        image: "/zak.jpg"
+    },
+    {
+        index: 2,
         title: "Vice President",
         image: "/yassine.jpg"
     },
     {
-        index: 2,
+        index: 3,
         title: "General Secretary",
         image: "/fatima.jpg"
     },
     {
-        index: 3,
+        index: 4,
         title: "Treasurer",
         image: "/salah.jpg"
     },
+    
+]
+const bmembers = [
     {
-        index: 4,
+        index: 5,
         title: "HR Manager",
         image: "/louba.jpg"
     },
-]
-const bmembers = [
-    
     {
-        index: 5,
+        index: 6,
         title: "R&D Manager",
         image: "/driss.jpg"
     },
     {
-        index: 6,
+        index: 7,
         title: "Event Manager",
         image: "/mana.jpg"
     },
     {
-        index: 7,
+        index: 8,
         title: "Design Manager",
         image: "/kawtar.jpg"
     },
+    
+]
+const cmembers = [
     {
         index: 8,
         title: "Media Manager",
         image: "/mediam.jpg"
     },
-]
-const cmembers = [
     {
         index: 9,
-        title: "President",
-        image: "/zak.jpg"
+        title: "Sponsoring Manager",
+        image: "/lamia.jpg"
     }
 ]
